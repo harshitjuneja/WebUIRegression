@@ -1,34 +1,30 @@
 {
-  "name": "caspertest",
-  "version": "0.0.1",
-  "description": "casperjs based visual regression suit runner and functional test runner",
+  "name": "web-ui-regression",
+  "version": "0.0.2",
+  "description": "Puppeteer based visual regression suit runner and functional test runner",
   "private": true,
   "appConfig": {
     "imagepath": "./images/",
     "journeyScriptPath": "./scripts/",
     "configScriptPath": "./configs/"
   },
-  "main": "Gruntfile.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "runCapture": "./scripts/capture.js",
+    "result": "./scripts/createDiff.js"
   },
-  "globalRequirements": {
-    "casperjs": "1.1.1",
-    "phantomjs": "1.9.8"
-  },
-  "devDependencies": {
-    "grunt": "0.4.5",
-    "node-resemble-js": "0.0.5",
-    "time-grunt": "1.4.0"
-  },
+  "devDependencies": {},
   "author": {
     "name": "Tirtha Guha",
     "email": "tirtha.guha@fil.com"
   },
-  "testdeveloper": 
-  {
+  "testdeveloper": {
     "name": "Ankit Bubna",
     "email": "ankit.bubna@fil.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^1.4.0"
+  }
 }
