@@ -1,0 +1,6 @@
+{
+	"url": "https://www.google.co.in",
+	"scriptfile": "./scripts/test/google.js",
+	"testname": "Google",
+	"browser": "desktopChrome"
+}
